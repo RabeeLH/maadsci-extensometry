@@ -10,5 +10,7 @@
 2. Only two points can be tracked
 3. Stress correlation assumes load frame end-point at sample failure
 ### Download and install MAaD Extensomsetry
-#### 
+####
+1. Under Code, download the zip as shown below:
 ![downloadcheck](https://user-images.githubusercontent.com/110251841/183200601-d3639656-b200-46f7-a9e7-f5860f0aebcd.PNG)
+2. Navigate to /
