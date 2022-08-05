@@ -1,0 +1,14 @@
+tracker='CSRT'
+bp=5
+auto_bp=1
+skip=0
+frac_strain=0.0
+frac_stress=0.0
+secant1=50
+secant2=100
+secant3=150
+secant4=200
+stress_row=1
+stress_column=2
+time_row=1
+time_column=1
