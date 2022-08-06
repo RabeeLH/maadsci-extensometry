@@ -9,7 +9,7 @@
 1. Extensometry analysis is only conducted in the horizontal direction
 2. Only two points can be tracked
 3. Stress correlation assumes load frame end-point at sample failure
-### Download and install MAaD Extensomsetry
+### Download and install MAaD Extensometry
 ####
 1. Under Code, download the zip as shown below:
 ####
