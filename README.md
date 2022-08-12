@@ -16,7 +16,7 @@
 ![downloadcheck](https://user-images.githubusercontent.com/110251841/183200601-d3639656-b200-46f7-a9e7-f5860f0aebcd.PNG)
 ####
 2. Unzip and navigate to /Executable/MAaD Extensometry/
-3. Run MAaDExtensomsetry.exe as shown below:
+3. Run MAaDExtensometry.exe as shown below:
 ###
 ![runexe](https://user-images.githubusercontent.com/110251841/183212526-29d0c6c8-572b-4ab2-b81d-f574056b9d03.PNG)
 ###
