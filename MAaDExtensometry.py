@@ -1093,10 +1093,10 @@ class Extensometry():
 
         # Create a tracker based on tracker name
         def createTrackerByName(trackerType):
-            if trackerType == trackerTypes[0]:
-                tracker = cv2.TrackerCSRT_create()
-            elif trackerType == trackerTypes[1]: 
-                tracker = cv2.TrackerKCF_create()
+            if trackerType == 'CSRT':
+                tracker = cv2.legacy.TrackerCSRT_create()
+            elif trackerType == 'KCF': 
+                tracker = cv2.legacy.TrackerKCF_create()
             else:
                 tracker = None
 
@@ -1159,11 +1159,16 @@ class Extensometry():
                 break
 
         # Create object to track gauge marks
-        track_Gauge = cv2.MultiTracker_create()
+        track_Gauge = cv2.legacy.MultiTracker_create()
 
         # Initialize tracker 
         for bbox in bboxes:
-            track_Gauge.add(createTrackerByName(trackerType), frame, bbox)
+            tracker = createTrackerByName(trackerType)
+            if tracker is not None:
+                 track_Gauge.add(tracker, frame, bbox)
+            else:
+                 print(f"Error: Unsupported tracker type '{trackerType}'")
+                 return
 
         frame_number = 0 # Initialize the frame count
         frame_number_fps = 0 # Initialize frame count for fps
